@@ -6,11 +6,13 @@
 export type RootStackParamList = {
   Root: undefined;
   NotFound: undefined;
+  Splash: undefined;
+  Settings: undefined;
 };
 
 export type BottomTabParamList = {
-  TabOne: undefined;
-  TabTwo: undefined;
+  Home: undefined;
+  Calendar: undefined;
 };
 
 export type TabOneParamList = {
@@ -19,4 +21,17 @@ export type TabOneParamList = {
 
 export type TabTwoParamList = {
   TabTwoScreen: undefined;
+  CalendarInputScreen: undefined;
+  HistoryScreen: undefined;
+};
+
+export type SettingsParamList = {
+  CycleSettingsScreen: undefined;
+  PeriodSettingsScreen: {
+    cycle: number;
+  };
+  LastDateSettingsScreen: {
+    cycle: number;
+    period: number;
+  };
 };
